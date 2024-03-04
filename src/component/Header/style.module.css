@@ -25,6 +25,7 @@
 }
 .headerOptions{
     cursor: pointer;
+    transition: all 0.45s ease;
 }
 .headerThird{
     position: relative;

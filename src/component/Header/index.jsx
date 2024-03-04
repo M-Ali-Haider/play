@@ -1,13 +1,17 @@
 import styles from './style.module.css'
 import Image from 'next/image'
 import nextConfig from '../../../next.config.js'
+import { useState } from 'react'
 
 export default function Header({isMobile}) {
+
+  const [selectedOption,setSelectedOption] = useState(0)
+
   return (
     <> 
     <header className={styles.header}>
         <HeaderLogo isMobile={isMobile}/>
-        {!isMobile && <HeaderSecond/>}
+        {!isMobile && <HeaderSecond selectedOption={selectedOption} setSelectedOption={setSelectedOption}/>}
         <HeaderThird isMobile={isMobile}/>
     </header>
     </>
@@ -34,15 +38,30 @@ function HeaderLogo({isMobile}) {
       );
     }
 
-    function HeaderSecond({}) {
-      return (<div className={styles.headerSecond}>
-          <div className={styles.headerOptionActivated}>Marketplace</div>
-          <div className={styles.headerOptions}>Stats</div>
-          <div className={styles.headerOptions}>Collections</div>
-          <div className={styles.headerOptions}>Explore</div>
-          <div className={styles.headerOptions}>Community</div>
-        </div>);
+    function HeaderSecond({ selectedOption, setSelectedOption }) {
+      const options = [
+        { label: 'Marketplace', index: 0 },
+        { label: 'Stats', index: 1 },
+        { label: 'Collections', index: 2 },
+        { label: 'Explore', index: 3 },
+        { label: 'Community', index: 4 }
+      ];
+    
+      return (
+        <div className={styles.headerSecond}>
+          {options.map(option => (
+            <div
+              key={option.index}
+              className={selectedOption === option.index ? `${styles.headerOptionActivated} ${styles.headerOptions}` : styles.headerOptions}
+              onClick={() => setSelectedOption(option.index)}
+            >
+              {option.label}
+            </div>
+          ))}
+        </div>
+      );
     }
+    
 
     function HeaderBurgerMenu({}) {
       return (<div className={styles.headerBurgerMenu}>
