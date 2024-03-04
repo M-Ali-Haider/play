@@ -1,0 +1,158 @@
+.landingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 524px;
+}
+
+.videoFrameContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.videoFrame{
+    width: 739px;
+    height: 449px
+}
+.video{
+    position: absolute;
+    top: 10px;
+    height: 375px;
+    width: 715px;
+    background-color: white;
+    object-fit: cover;
+}
+.crown{
+    position: absolute;
+    top: -90px;
+    right: -70px;
+    object-fit: contain;
+}
+.registerNowButton{
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.11em;
+    text-align: left;
+    cursor: pointer;
+}
+
+.stripesContainer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+.stripesContainerHelper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+.stripesContainerHelper::-webkit-scrollbar{
+    display: none;
+}
+.stripe{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    left: -100px;
+    right: -100px;
+    transform: rotate(10deg);
+    height: 74px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.stripeInvert{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    left: -100px;
+    right: -100px;
+    transform: rotate(-10deg);
+    height: 74px;
+    background: rgba(255, 255, 255, 0.05); 
+    
+}
+.stripeInvert img,.stripe img{
+    width: auto;
+    height: auto;
+}
+
+
+@media (max-width:800px) {
+    .landingContainer{
+        padding-top:30px;
+    }
+    .videoFrameContainer{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .videoFrame{
+        width: 327px;
+        height: 226px
+    }
+    .video{
+        position: absolute;
+        top: 5px;
+        height: 189px;
+        width: 316px;
+    }
+    .registerNowButton{
+        font-family: Bebas Neue;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.11em;
+        text-align: left;
+        bottom: 8px;
+    }
+    .crown{
+        position: absolute;
+        top: -40px;
+        right: -30px;
+        object-fit: contain;
+    }
+    .stripe{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        left: -100px;
+        right: -100px;
+        transform: rotate(10deg);
+        height: 40px;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF),linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    }
+    .stripeInvert{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        left: -100px;
+        right: -100px;
+        transform: rotate(-10deg);
+        height: 40px;
+        background: rgba(255, 255, 255, 0.05); 
+        
+    }
+}
+
+
+@media (max-width:600px) {
+    .landingContainer{
+        height: 264px;
+    }
+}

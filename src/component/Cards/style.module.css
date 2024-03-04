@@ -1,0 +1,48 @@
+.cardsContainer{
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.32px solid;
+    border-image-source: radial-gradient(80.38% 222.5% at -13.75% -12.36%, #A2A2A2 0%, rgba(191, 193, 193, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(80.69% 208.78% at 108.28% 112.58%, rgba(238, 100, 42, 0.67) 0%, rgba(135, 38, 183, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 13.9px;
+}
+.cardImage{
+    border-radius: 13.9px;
+}
+.playNowHelper{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playNow{
+    position: absolute;
+    width: 283px;
+    height: 56px;
+    bottom: -5%;
+}
+.cardVector{
+    position: absolute;
+    cursor: pointer;
+}
+.playNowHeading{
+    position: absolute;
+    color: white;
+    font-family: Bebas Neue;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.11em;
+    text-align: left;
+
+}

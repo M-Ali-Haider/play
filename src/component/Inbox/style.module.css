@@ -1,0 +1,86 @@
+.inboxContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.inboxImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageFrame{
+    z-index: -1;
+}
+.imageAbsolute{
+    position: absolute;
+}
+.tab{
+    color: #fff;
+}
+.tabBox{
+    height: 67px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    border-bottom:1px solid white;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.arrow{
+    transition: all 0.5s ease;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.tabExtended{
+    transition: all 0.5s ease;
+    overflow: hidden;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.desc{
+    padding: 10px;
+    margin-left: 10px;
+}
+.tabBoxSelected{
+    border: 1px solid;
+    border-image-source: radial-gradient(80.38% 222.5% at -13.75% -12.36%, #A2A2A2 0%, rgba(191, 193, 193, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(80.69% 208.78% at 108.28% 112.58%, rgba(238, 100, 42, 0.67) 0%, rgba(135, 38, 183, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(165, 239, 255, 0.2) 0%, rgba(110, 191, 244, 0.0447917) 77.08%, rgba(70, 144, 213, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    
+}
+
+.inboxButtons{
+    position: relative;
+}
+@media(max-width:700px){
+    .inboxContainer{
+        gap: 30px;
+    }
+    .tabExtended{
+        transition: all 0.5s ease;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+    }
+    .tabBox{
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+        text-align: left;
+
+    }
+}
