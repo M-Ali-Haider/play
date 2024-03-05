@@ -18,6 +18,7 @@
 }
 .tab{
     color: #fff;
+    font-family: var(--nunito);
 }
 .tabBox{
     height: 67px;

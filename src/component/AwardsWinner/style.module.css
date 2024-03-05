@@ -79,6 +79,7 @@
     line-height: 31px;
     letter-spacing: -0.02em;
     text-align: left;
+    font-family: var(--nunito);
 }
 .gamingCollections{
     font-size: 18px;
@@ -86,6 +87,7 @@
     line-height: 31px;
     letter-spacing: -0.02em;
     text-align: left;
+    font-family: var(--nunito);
 }
 .gamingCollections span{
     background: linear-gradient(90.26deg, #C1260F 0.34%, #EE642A 96.66%);

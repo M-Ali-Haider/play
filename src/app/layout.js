@@ -1,10 +1,14 @@
 import { Inter } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
+import { Poppins } from "next/font/google";
+import { Nunito } from "next/font/google";
 
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const bebas = Bebas_Neue({ subsets:["latin"], weight:["400"],display:'swap',variable:'--bebasFont'})
+const poppins = Poppins({subsets:["latin"],weight:["400"],display:"swap",variable:'--poppins'})
+const nunito = Nunito({subsets:["latin"],weight:["400"],display:"swap",variable:'--nunito'})
 
 export const metadata = {
   title: "Play Website",
@@ -14,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${bebas.variable}`}>{children}</body>
+      <body className={`${inter.className} ${bebas.variable} ${poppins.variable} ${nunito.variable}`}>{children}</body>
     </html>
   );
 }
