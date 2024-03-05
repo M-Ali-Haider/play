@@ -36,3 +36,7 @@ html{
 .swiper-slide-active{
   transform: scale(1)!important;
 }
+
+.bebasHeadings{
+  font-family: var(--bebasFont);
+}
