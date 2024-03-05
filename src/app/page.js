@@ -8,6 +8,8 @@ import Cards from "@/component/Cards";
 import CrownHeading from "@/component/CrownHeading";
 import Inbox from "@/component/Inbox";
 
+import Footer from "@/component/Footer";
+
 import { useEffect, useState } from "react";
 export default function Home() {
   const [isMobile,setIsMobile]=useState(false);
@@ -29,6 +31,7 @@ export default function Home() {
     <CrownHeading isMobile={isMobile} heading={"the most recent patterns, conveyed directly to your inbox"}/>
     <Inbox isMobile={isMobile}/>
     <CrownHeading isMobile={isMobile} heading={"happy clients"}/>
+    <Footer isMobile={isMobile}/>
     </>
   );
 }
