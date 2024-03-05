@@ -1,0 +1,175 @@
+.awardsContainer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 10px 80px;
+}
+.awardsNavbar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 40px 0px;
+    margin-bottom: 60px;
+}
+.awardsNavbarUnit{
+    cursor: pointer;
+}
+.awardsNavbarActivated{
+    background: linear-gradient(90.26deg, #C1260F 0.34%, #EE642A 96.66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.awardsHeading{
+    max-width: 700px;
+    font-family: Bebas Neue;
+    font-size: 83px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.awardsGallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.awardsUnit{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+}
+.awardsUnit:nth-child(2){
+    transform: translateY(-90px);
+}
+.awardsImage{
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    min-width: 350px;
+    aspect-ratio: 595/488;
+    border: 2.32px solid;
+    border-image-source: radial-gradient(80.38% 222.5% at -13.75% -12.36%, #A2A2A2 0%, rgba(191, 193, 193, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(80.69% 208.78% at 108.28% 112.58%, rgba(238, 100, 42, 0.67) 0%, rgba(135, 38, 183, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+
+.awardsUnit:nth-child(1) img:nth-child(2){
+    aspect-ratio: 595/556;
+}
+.awardsUnit:nth-child(2) img:nth-child(2){
+    aspect-ratio: 595/470;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+}
+.weHave{
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.hundredPlus{
+    font-family: Bebas Neue;
+    font-size: 83px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+.gamingCollections{
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.gamingCollections span{
+    background: linear-gradient(90.26deg, #C1260F 0.34%, #EE642A 96.66%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+@media (max-width:913px){
+    .awardsGallery div:nth-child(2){
+        transform: translateY(0px);
+    }
+
+    .weHave{
+        font-size: 17px;
+        font-weight: 200;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+    .hundredPlus{
+        font-family: Bebas Neue;
+        font-size: 68px;
+        font-weight: 400;
+        line-height: 65px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+    .gamingCollections{
+        font-size: 17px;
+        font-weight: 200;
+        line-height: 25px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+}
+
+@media (max-width:800px){
+    .awardsContainer{
+        margin-top: 50px;
+        padding: 0px 20px;
+    }
+    .awardsHeading{
+        font-family: Bebas Neue;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: -0.04em;
+        text-align: left;
+        max-width: 366px;
+    }
+    .awardsNavbar{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        justify-content: space-between;
+        margin: 30px 0px;
+    }
+    .awardsGallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .awardsGallery div{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        flex: 1;
+    }
+
+    
+}

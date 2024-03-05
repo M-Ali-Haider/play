@@ -20,7 +20,7 @@ export default function Header({isMobile}) {
 
 function HeaderLogo({isMobile}) {
   return (<div className={styles.headerFirst}>
-        <Image src={`${nextConfig.basePath}/images/logo.png`} width={isMobile?104:150} height={isMobile?25:50} alt='logo image' />
+        <Image src={`${nextConfig.basePath}/images/logosvg.svg`} width={isMobile?104:150} height={isMobile?25:50} alt='logo image' />
     </div>);
 }
 

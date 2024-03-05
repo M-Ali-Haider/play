@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .socialDiv img{
     width: 18px;
@@ -22,7 +23,9 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.footerOne img{
+    cursor: pointer;
+}
 .footerTwo{
     font-size: 16px;
     font-weight: 400;

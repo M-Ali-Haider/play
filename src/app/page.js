@@ -7,6 +7,7 @@ import Socials from "@/component/Socials";
 import Cards from "@/component/Cards";
 import CrownHeading from "@/component/CrownHeading";
 import Inbox from "@/component/Inbox";
+import AwardsWinner from "@/component/AwardsWinner";
 
 import Footer from "@/component/Footer";
 
@@ -30,6 +31,7 @@ export default function Home() {
     <Cards isMobile={isMobile}/>
     <CrownHeading isMobile={isMobile} heading={"the most recent patterns, conveyed directly to your inbox"}/>
     <Inbox isMobile={isMobile}/>
+    <AwardsWinner isMobile={isMobile}/>
     <CrownHeading isMobile={isMobile} heading={"happy clients"}/>
     <Footer isMobile={isMobile}/>
     </>

@@ -54,7 +54,7 @@ function FooterThird({}) {
 
     function FooterLogo({isMobile}) {
       return (<div className={styles.footerOne}>
-            <Image src={`${nextConfig.basePath}/images/logo.png`} width={isMobile ? 104 : 150} height={isMobile ? 25 : 50} alt='logo image' />
+            <Image src={`${nextConfig.basePath}/images/logosvg.svg`} width={isMobile ? 104 : 150} height={isMobile ? 25 : 50} alt='logo image' />
         </div>);
     }
 

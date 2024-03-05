@@ -53,6 +53,7 @@ function InboxImageContainer({isMobile}) {
         height: isMobile?326:526
         }}>
         <Image className={styles.imageFrame} src={`${nextConfig.basePath}/images/inboximageframe.png`} width={isMobile?380:614} height={isMobile?326:526} alt='image-frame' />
+        {/* Images below should be in a swiper */}
         <Image className={styles.imageAbsolute} src={`${nextConfig.basePath}/images/inboximage.png`} width={isMobile?368:594} height={isMobile?308:497} alt='inbox-image' />
     </div>);
 }

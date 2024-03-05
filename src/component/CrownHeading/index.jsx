@@ -6,7 +6,7 @@ export default function CrownHeading({isMobile,heading}) {
     <div className={styles.crownHeading}>
         <Image 
             className={styles.crown}
-            src={`${nextConfig.basePath}/images/crownheading.png`}
+            src={`${nextConfig.basePath}/images/crownsvg.svg`}
             width={80}
             height={80}
             alt={"crown image"}
