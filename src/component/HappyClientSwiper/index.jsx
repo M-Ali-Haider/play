@@ -34,7 +34,7 @@ export default function HappyClientsSwiper() {
         >
             {
                 [...Array(5)].map((_,i)=>{
-                    return <SwiperSlide key={i} className={styles.swiperSlide}><InnerSwiperSlide/></SwiperSlide>
+                    return <SwiperSlide key={i} className={styles.swiperSlide}><InnerSwiperSlide isSwiperSingle={isSwiperSingle}/></SwiperSlide>
                 })
             }
         </Swiper>
@@ -42,8 +42,8 @@ export default function HappyClientsSwiper() {
   )
 }
 
-function InnerSwiperSlide({}) {
-  return (<><Image className={styles.annotationAbsolute} src={`${nextConfig.basePath}/images/annotation.svg`} width={72} height={62} alt='annotation image' />
+function InnerSwiperSlide({isSwiperSingle}) {
+  return (<><Image className={styles.annotationAbsolute} src={`${nextConfig.basePath}/images/annotation.svg`} width={isSwiperSingle?44:72} height={isSwiperSingle?37:62} alt='annotation image' />
             <Image className={styles.stars} src={`${nextConfig.basePath}/images/stars.svg`} width={145} height={35} alt='stars-image' />
             <div className={styles.swiperSlideText}>
                 Quick and adaptable, SoundPart reliably meets these key necessities. The capacity to talk straightforwardly with a senior guarantor makes this conceivable. Quick and adaptable, SoundPart reliably meets these key necessities. The capacity to talk straightforwardly with a senior guarantor makes this conceivable.

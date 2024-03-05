@@ -60,6 +60,8 @@
         padding: 15px;
         padding-top: 50px;
         border-radius: 5px;
+        gap: 20px;
+        padding-bottom: 10px;
     }
     .swiperSlideText{
         height: 154px;
