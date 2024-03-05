@@ -5,10 +5,10 @@ import LandingText from "@/component/LandingText";
 import Landing from "@/component/Landing";
 import Socials from "@/component/Socials";
 import Cards from "@/component/Cards";
-import CrownHeading from "@/component/CrownHeading";
 import Inbox from "@/component/Inbox";
 import AwardsWinner from "@/component/AwardsWinner";
-
+import CrownHeading from "@/component/CrownHeading";
+import HappyClientsSwiper from "@/component/HappyClientSwiper";
 import Footer from "@/component/Footer";
 
 import { useEffect, useState } from "react";
@@ -33,6 +33,7 @@ export default function Home() {
     <Inbox isMobile={isMobile}/>
     <AwardsWinner isMobile={isMobile}/>
     <CrownHeading isMobile={isMobile} heading={"happy clients"}/>
+    <HappyClientsSwiper/>
     <Footer isMobile={isMobile}/>
     </>
   );
