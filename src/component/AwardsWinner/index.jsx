@@ -2,6 +2,40 @@ import { useState } from 'react'
 import Image from 'next/image';
 import styles from './style.module.css'
 import nextConfig from '../../../next.config';
+
+const patterns = [
+    {
+        first: "gallery1.jpg",
+        second: "gallery2.jpg",
+        third: "gallery3.jpg",
+        fourth: "gallery4.jpg",
+    },
+    {
+        first: "gallery2.jpg",
+        second: "gallery1.jpg",
+        third: "gallery4.jpg",
+        fourth: "gallery3.jpg",
+    },
+    {
+        first: "gallery3.jpg",
+        second: "gallery4.jpg",
+        third: "gallery1.jpg",
+        fourth: "gallery2.jpg",
+    },
+    {
+        first: "gallery4.jpg",
+        second: "gallery3.jpg",
+        third: "gallery2.jpg",
+        fourth: "gallery1.jpg",
+    },
+    {
+        first: "gallery2.jpg",
+        second: "gallery1.jpg",
+        third: "gallery3.jpg",
+        fourth: "gallery4.jpg",
+    }
+];
+
 export default function AwardsWinner({isMobile}) {
     const [selectedUnit,setSelectedUnit] = useState(0);
   return (
@@ -9,14 +43,15 @@ export default function AwardsWinner({isMobile}) {
         <div className={styles.awardsHeading}>we’re the first gaming award winners  the world</div>
         <div className={styles.awardsRest}>
             <NavBar selectedUnit={selectedUnit} setSelectedUnit={setSelectedUnit}/>
+
             <div className={styles.awardsGallery}>
                 <div className={styles.awardsUnit}>
-                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/gallery1.jpg`} width={500} height={500} alt='gallery-image'/>
-                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/gallery2.jpg`} width={500} height={500} alt='gallery-image'/>
+                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/${patterns[selectedUnit].first}`} width={500} height={500} alt='gallery-image'/>
+                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/${patterns[selectedUnit].second}`} width={500} height={500} alt='gallery-image'/>
                 </div>
                 <div className={styles.awardsUnit}>
-                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/gallery3.jpg`} width={500} height={500} alt='gallery-image'/>
-                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/gallery4.jpg`} width={500} height={500} alt='gallery-image'/>
+                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/${patterns[selectedUnit].third}`} width={500} height={500} alt='gallery-image'/>
+                    <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/${patterns[selectedUnit].fourth}`} width={500} height={500} alt='gallery-image'/>
                     <div className={styles.stats}>
                         <div className={styles.weHave}>We’ve have many more than</div>
                         <div className={styles.hundredPlus}>100 +</div>
@@ -24,6 +59,7 @@ export default function AwardsWinner({isMobile}) {
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
   )

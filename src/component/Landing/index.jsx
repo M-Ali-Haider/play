@@ -1,6 +1,9 @@
 import styles from './style.module.css'
 import Image from 'next/image'
 import nextConfig from '../../../next.config'
+import YouTube from 'react-youtube'
+
+
 export default function Landing({isMobile}) {
   return (
     <>
@@ -26,9 +29,11 @@ function VideoFrameContainer({isMobile}) {
     <Image className={styles.videoFrame} src={`${nextConfig.basePath}/images/videoframe.png`} width={739} height={449} alt="video-frame-border image" />
 
 
-    <video className={styles.video} controls>
-      <source src='https://www.youtube.com/watch?v=-kAm0CVxqUQ'/>
-    </video>
+    {/* <video className={styles.video} controls>
+      <source src='https://www.youtube.com/watch?v=-kAm0CVxqUQ' type='mp4'/>
+    </video> */}
+
+    <YouTube className={styles.video} videoId={`-kAm0CVxqUQ`} opts={{width:isMobile?316:715,height:isMobile?189:374}}/>
 
 
     <div className={styles.registerNowButton}>Register Now</div>

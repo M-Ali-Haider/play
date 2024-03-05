@@ -17,10 +17,10 @@
 }
 .video{
     position: absolute;
-    top: 10px;
-    height: 375px;
-    width: 715px;
-    background-color: white;
+    top:10px;
+    /* height: 375px;
+    width: 715px; */
+    background-color: black;
     object-fit: cover;
 }
 .crown{
