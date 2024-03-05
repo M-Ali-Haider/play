@@ -80,14 +80,6 @@
     letter-spacing: -0.02em;
     text-align: left;
 }
-.hundredPlus{
-    font-family: var(--bebasFont);
-    font-size: 83px;
-    font-weight: 400;
-    line-height: 80px;
-    letter-spacing: -0.04em;
-    text-align: left;
-}
 .gamingCollections{
     font-size: 18px;
     font-weight: 200;
@@ -107,11 +99,48 @@
     text-align: left;
 }
 
+.bruh{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hundredPlus{
+    font-family: var(--bebasFont);
+    font-size: 83px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -0.04em;
+}
+.viewMoreContainer{
+    position: relative;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.viewMoreContainer img{
+    position: absolute;
+    z-index: 1;
+}
+.viewMoreContainer div{
+    z-index: 3;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width:913px){
     .awardsGallery div:nth-child(2){
         transform: translateY(0px);
     }
-
     .weHave{
         font-size: 17px;
         font-weight: 200;
@@ -125,7 +154,6 @@
         font-weight: 400;
         line-height: 65px;
         letter-spacing: -0.04em;
-        text-align: left;
     }
     .gamingCollections{
         font-size: 17px;
@@ -169,7 +197,5 @@
         flex-direction: column;
         gap: 25px;
         flex: 1;
-    }
-
-    
+    }    
 }

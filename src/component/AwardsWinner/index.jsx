@@ -54,7 +54,18 @@ export default function AwardsWinner({isMobile}) {
                     <Image className={styles.awardsImage} src={`${nextConfig.basePath}/images/${patterns[selectedUnit].fourth}`} width={500} height={500} alt='gallery-image'/>
                     <div className={styles.stats}>
                         <div className={styles.weHave}>We’ve have many more than</div>
-                        <div className={styles.hundredPlus}>100 +</div>
+                        <section className={styles.bruh}>
+                            <div className={styles.hundredPlus}>100+</div>
+                            <div className={styles.viewMoreContainer}>
+                                <Image 
+                                    src={`${nextConfig.basePath}/images/playnow.svg`}
+                                    width={130}
+                                    height={40}
+                                    alt='view-more-image'
+                                />
+                                <div>View More</div>
+                            </div>
+                        </section>
                         <p className={styles.gamingCollections}>Gaming <span>Collections</span></p>
                     </div>
                 </div>

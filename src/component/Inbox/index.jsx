@@ -38,9 +38,31 @@ export default function Inbox({isMobile}) {
                 })
             }
 
-            <div className={styles.inboxButtons}>
-                <div className={styles.buttonOne}>Play Now</div>
-                <div className={styles.buttonTwo}>Watch Trailer</div>
+            <div className={styles.inboxButtonsContainer}>
+                <div className={styles.inboxButton}>
+                    <div className={styles.inboxButtonHelper}>
+                        <Image
+                            className={styles.inboxButtonImage} 
+                            src={`${nextConfig.basePath}/images/playnow.svg`}
+                            width={130}
+                            height={40}
+                            alt='playnow-image'
+                        />
+                        <div className={styles.inboxIndex}>Play Now</div>
+                    </div>
+                </div>
+                <div className={styles.inboxButton}>
+                    <div className={styles.inboxButtonHelper}>
+                        <Image 
+                            className={styles.inboxButtonImage} 
+                            src={`${nextConfig.basePath}/images/watchtrailer.svg`}
+                            width={130}
+                            height={40}
+                            alt='playnow-image'
+                        />
+                        <div className={styles.inboxIndex}>Watch Trailer</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
